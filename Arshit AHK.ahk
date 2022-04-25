@@ -438,7 +438,7 @@ F9::
 
 ^+q::
 {
-	Run "D:\Data\Arshit\AutoHotKey\New-Set.html"
+	Run "D:\Data\Git\AutoHotKey-Script\index.html"
 	splash()
 	return
 }
@@ -514,6 +514,20 @@ F9::
 	{
 		WinActivate, ahk_exe chrome.exe
 		Run, https://www.google.com/search?q=%clipboard%
+	}
+	splash()
+	return
+}
+
+; search lyrics on google
+^#l::
+{
+	Send, ^c
+	SetTitleMatchMode, 2
+	If WinExist ("ahk_exe chrome.exe")
+	{
+		WinActivate, ahk_exe chrome.exe
+		Run, https://www.google.com/search?q=%clipboard% lyrics
 	}
 	splash()
 	return
