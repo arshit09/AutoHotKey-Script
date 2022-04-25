@@ -3,7 +3,7 @@ AutoHotKey script for my personal use.
 
 ###  My Keybindings
 
-[![Keyboard Mapping](https://raw.githubusercontent.com/arshit09/AutoHotKey-Script/main/images/shortucut-mapping.png "Keyboard Mapping")](https://raw.githubusercontent.com/arshit09/AutoHotKey-Script/main/images/shortucut-mapping.png "Keyboard Mapping")
+[![Keyboard Mapping](https://raw.githubusercontent.com/arshit09/AutoHotKey-Script/main/assets/shortucut-mapping.png "Keyboard Mapping")](https://raw.githubusercontent.com/arshit09/AutoHotKey-Script/main/images/shortucut-mapping.png "Keyboard Mapping")
 
 Visit [Keyboard Shortcut Map Maker](https://archie-adams.github.io/keyboard-shortcut-map-maker/#top "Keyboard Shortcut Map Maker") to create a visual image of keyboard shortcuts or application keybindings.
 > Above image is the visual representation of the keymapping of [this script](https://github.com/arshit09/AutoHotKey-Script/blob/b17eda1274edfd96eae315b378eca46195ca48c6/Arshit%20AHK.ahk "this script"). The current script may have changed. Visit [this website](https://arshit09.github.io/AutoHotKey-Script/ "this website") to get the lattest keymapping.
