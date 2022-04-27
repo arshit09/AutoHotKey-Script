@@ -316,7 +316,7 @@ F9::
 
 !t::
 {
-	Run "D:\My scripts\BoringStuffAutomated"
+	Run "D:\Data\Git"
 	splash()
 	return
 }
