@@ -8,7 +8,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 SetTimer, Suspend, 1
 Return
 Suspend:
-IF A_IsSuspended ^ (!!WinActive("ahk_exe Illustrator.exe") | !!WinActive("ahk_exe dota2.exe") | !!WinActive("ahk_exe CamtasiaStudio.exe"))
+IF A_IsSuspended ^ (!!WinActive("ahk_exe Illustrator.exe") | !!WinActive("ahk_exe dota2.exe") | !!WinActive("ahk_exe CamtasiaStudio.exe") | !!WinActive("ahk_exe Figma.exe"))
 	Suspend
 Return
 
