@@ -3,6 +3,12 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+; Key description
+;	#	Windows key
+;	!	Alt
+;	^	Ctrl
+;	+	Shift
+
 ;-----------------------suspend while program is active/open-------------------------
 #Persistent
 SetTimer, Suspend, 1
@@ -35,8 +41,7 @@ F9::
 	return
 }
 
-;-----------------------exe-------------------------
-;--------------------Ctrl + Alt---------------------
+;-----------------------exe = Ctrl + Alt-------------------------
 ^!a::
 {
 	Run "C:\Program Files\Adobe\Adobe Illustrator 2021\Support Files\Contents\Windows\Illustrator.exe"
@@ -81,7 +86,7 @@ F9::
 
 ^!i::
 {
-	Run "C:\Program Files (x86)\Internet Download Manager\IDMan.exe"
+	Run "C:\Program Files\Softdeluxe\Free Download Manager\fdm.exe"
 	splash()
 	return
 }
@@ -234,8 +239,7 @@ F9::
 	return
 }
 
-;-----------------------folders-------------------------
-;-------------------------Alt---------------------------
+;-----------------------folders = Alt-------------------------
 
 !a::
 {
@@ -349,8 +353,7 @@ F9::
 	return
 }
 
-;-----------------------sites-------------------------
-;--------------------Ctrl + Shift---------------------
+;-----------------------sites = Ctrl + Shift-------------------------
 ^+a::
 {
 	Run "https://www.amazon.ca/"
@@ -493,7 +496,7 @@ F9::
 	return
 }
 
-;-----------------------macros-------------------------
+;-----------------------macros = Ctrl + Win-------------------------
 ; search on everything
 ^#e::
 {
@@ -533,9 +536,29 @@ F9::
 	return
 }
 
+; search pngs
+^#p::
+{
+InputBox, UserInput, PNG Finder, Image name: 
+if ErrorLevel
+    MsgBox, CANCEL was pressed.
+else
+    {
+	Run, https://favpng.com/png_search/%UserInput%
+	Run, https://www.cleanpng.com/free/%UserInput%.html
+	Run, https://stickpng.com/search?q=%UserInput%&page=1
+	Run, https://pngtree.com/so/%UserInput%
+	Run, https://purepng.com/search?q=%UserInput%
+	Run, https://www.pngwing.com/en/search?q=%UserInput%
+	Run, https://www.pngall.com/?s=%UserInput%
+	Run, https://www.pngitem.com/so/%UserInput%/
+	}
+return
+}
+
 ; ----------------------------------------------------------------------------------------
 
-;Volume control, Alt+Scroll wheel (and Mbutton)
+; Volume control =  Alt + Mouse Scroll Wheel
 Alt & WheelUp::Volume_Up
 Alt & WheelDown::Volume_Down
 Alt & MButton::Volume_Mute
@@ -551,7 +574,7 @@ Alt & MButton::Volume_Mute
 ; Suspend AutoHotkey
 F7::Suspend
 
-;Transparency toggle, Scroll Lock
+; Transparency toggle, Scroll Lock
 sc046::
 {
 	toggle:=!toggle
@@ -567,15 +590,18 @@ sc046::
 	return
 }
 
+; Mouse Scroll Wheel, Scroll Down to Minimize
 +WheelDown::
 WinMinimize, A
 Return
 
+
+; Mouse Scroll Wheel, Scroll Up to Maximize
 +WheelUp::
 WinMaximize, A
 Return
 
-; Click your Mouse’s middle button to move up in file explorer
+; Press Mouse Scroll Wheel to move up in file explorer
 #IfWinActive, ahk_class CabinetWClass
 ~MButton::
 {
