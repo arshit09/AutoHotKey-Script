@@ -539,21 +539,22 @@ F9::
 ; search pngs
 ^#p::
 {
-InputBox, UserInput, PNG Finder, Image name: 
-if ErrorLevel
-    MsgBox, CANCEL was pressed.
-else
-    {
-	Run, https://favpng.com/png_search/%UserInput%
-	Run, https://www.cleanpng.com/free/%UserInput%.html
-	Run, https://stickpng.com/search?q=%UserInput%&page=1
-	Run, https://pngtree.com/so/%UserInput%
-	Run, https://purepng.com/search?q=%UserInput%
-	Run, https://www.pngwing.com/en/search?q=%UserInput%
-	Run, https://www.pngall.com/?s=%UserInput%
-	Run, https://www.pngitem.com/so/%UserInput%/
+	InputBox, UserInput, PNG Finder, Image name: 
+	if ErrorLevel
+		MsgBox, CANCEL was pressed.
+	else
+	{
+		Run, https://favpng.com/png_search/%UserInput%
+		Run, https://www.cleanpng.com/free/%UserInput%.html
+		Run, https://stickpng.com/search?q=%UserInput%&page=1
+		Run, https://pngtree.com/so/%UserInput%
+		Run, https://purepng.com/search?q=%UserInput%
+		Run, https://www.pngwing.com/en/search?q=%UserInput%
+		Run, https://www.pngall.com/?s=%UserInput%
+		Run, https://www.pngitem.com/so/%UserInput%/
 	}
-return
+	splash()
+	return
 }
 
 ; ----------------------------------------------------------------------------------------
