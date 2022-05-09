@@ -539,6 +539,7 @@ F9::
 ; search pngs
 ^#p::
 {
+	splash()
 	InputBox, UserInput, PNG Finder, Image name: 
 	if ErrorLevel
 		MsgBox, CANCEL was pressed.
@@ -553,7 +554,6 @@ F9::
 		Run, https://www.pngall.com/?s=%UserInput%
 		Run, https://www.pngitem.com/so/%UserInput%/
 	}
-	splash()
 	return
 }
 
