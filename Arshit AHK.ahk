@@ -5,8 +5,8 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ; Numlock always enabled
 SetNumlockState, AlwaysOn
-; Capslock always enabled
-SetCapsLockState, AlwaysOn
+; Capslock always disabled
+SetCapsLockState, AlwaysOff
 
 ; SetScrollLockState, AlwaysOn
 
