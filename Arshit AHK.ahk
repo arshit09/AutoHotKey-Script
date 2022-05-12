@@ -3,6 +3,13 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+; Numlock always enabled
+SetNumlockState, AlwaysOn
+; Capslock always enabled
+SetCapsLockState, AlwaysOn
+
+; SetScrollLockState, AlwaysOn
+
 ; Key description
 ;	#	Windows key
 ;	!	Alt
@@ -613,12 +620,6 @@ Return
 }
 
 ; ---------------------scope------------------------------------
-
-; NumLock always enabled
-; SetNumlockState, AlwaysOn
-; SetCapsLockState, AlwaysOn
-; SetScrollLockState, AlwaysOn
-; return
 
 ; Insert special character
 ; !q::SendInput {™} ; Alt + Q
