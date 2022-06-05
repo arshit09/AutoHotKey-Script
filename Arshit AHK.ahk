@@ -507,17 +507,18 @@ F9::
 ; search on everything
 ^#e::
 {
+	splash()
 	Send, ^c
 	Send, #1
 	WinWaitActive, Everything
 	Send, ^v
-	splash()
 	return
 }
 
-; search on google
+; google search
 ^#g::
 {
+	splash()
 	Send, ^c
 	SetTitleMatchMode, 2
 	If WinExist ("ahk_exe chrome.exe")
@@ -525,13 +526,13 @@ F9::
 		WinActivate, ahk_exe chrome.exe
 		Run, https://www.google.com/search?q=%clipboard%
 	}
-	splash()
 	return
 }
 
 ; search lyrics on google
 ^#l::
 {
+	splash()
 	Send, ^c
 	SetTitleMatchMode, 2
 	If WinExist ("ahk_exe chrome.exe")
@@ -539,7 +540,6 @@ F9::
 		WinActivate, ahk_exe chrome.exe
 		Run, https://www.google.com/search?q=%clipboard% lyrics
 	}
-	splash()
 	return
 }
 
@@ -560,6 +560,37 @@ F9::
 		Run, https://www.pngwing.com/en/search?q=%UserInput%
 		Run, https://www.pngall.com/?s=%UserInput%
 		Run, https://www.pngitem.com/so/%UserInput%/
+	}
+	return
+}
+
+; take input and google it for meaning
+^#m::
+{
+	splash()
+	InputBox, UserInput, Google Meaning, Enter the Word: 
+	if ErrorLevel
+	{
+		; MsgBox, CANCEL was pressed.
+	}
+	else
+	{
+		Run, https://www.google.com/search?q=%UserInput% meaning
+	}
+	
+	return
+}
+
+; select the text and google it for meaning
+^#f::
+{
+	splash()
+	Send, ^c
+	SetTitleMatchMode, 2
+	If WinExist ("ahk_exe chrome.exe")
+	{
+		WinActivate, ahk_exe chrome.exe
+		Run, https://www.google.com/search?q=%clipboard% meaning
 	}
 	return
 }
