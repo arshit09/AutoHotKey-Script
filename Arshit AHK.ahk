@@ -121,7 +121,10 @@ F9::
 
 ^!o::
 {
-	Run "C:\Program Files\obs-studio\bin\64bit\obs64.exe"
+	Run "C:\Users\Public\Desktop\OBS Studio.lnk"
+	;"C:\Program Files\obs-studio\bin\64bit\obs64.exe" /k " cd\ & cd "C:\Program Files\obs-studio\bin\64bit"
+	;"C:\Program Files\obs-studio\bin\64bit\obs64.exe" cd\ & cd "C:\Program Files\obs-studio\bin\64bit"
+	;Run cmd.exe /c '"C:\Program Files\obs-studio\bin\64bit\obs64.exe" cd\ & cd "C:\Program Files\obs-studio\bin\64bit"',,hide
 	splash()
 	return
 }
