@@ -633,9 +633,9 @@ sc046::
 }
 
 ; Mouse Scroll Wheel, Scroll Down to Minimize
-+WheelDown::
-WinMinimize, A
-Return
+;+WheelDown::
+;WinMinimize, A
+;Return
 
 
 ; Mouse Scroll Wheel, Scroll Up to Maximize
