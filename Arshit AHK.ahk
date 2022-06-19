@@ -449,6 +449,13 @@ F9::
 	return
 }
 
+^+r::
+{
+	Run "https://www.reddit.com/"
+	splash()
+	return
+}
+
 ^+q::
 {
 	Run "D:\Data\Git\AutoHotKey-Script\index.html"
