@@ -4,9 +4,9 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ; Numlock always enabled
-SetNumlockState, AlwaysOn
+;SetNumlockState, AlwaysOn
 ; Capslock always disabled
-SetCapsLockState, AlwaysOff
+;SetCapsLockState, AlwaysOff
 
 ; SetScrollLockState, AlwaysOn
 
@@ -449,12 +449,12 @@ F9::
 	return
 }
 
-^+r::
-{
-	Run "https://www.reddit.com/"
-	splash()
-	return
-}
+;^+r::
+;{
+;	Run "https://www.reddit.com/"
+;	splash()
+;	return
+;}
 
 ^+q::
 {
