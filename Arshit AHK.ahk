@@ -395,7 +395,7 @@ F9::
 
 ^+f::
 {
-	Run "https://www.youtube.com/watch?v=5qap5aO4i9A"
+	Run "https://www.youtube.com/watch?v=jfKfPfyJRdk"
 	splash()
 	return
 }
