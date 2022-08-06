@@ -6,7 +6,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; Numlock always enabled
 ;SetNumlockState, AlwaysOn
 ; Capslock always disabled
-;SetCapsLockState, AlwaysOff
+SetCapsLockState, AlwaysOff
 
 ; SetScrollLockState, AlwaysOn
 
@@ -514,6 +514,29 @@ F9::
 }
 
 ;-----------------------macros = Ctrl + Win-------------------------
+; connect bluetooth device
+^#c::
+{
+	Run "C:\Windows\c.bat"
+	splash()
+	return
+}
+; disconnect bluetooth device
+^#d::
+{
+	Run "C:\Windows\d.bat"
+	splash()
+	return
+}
+; reconnect bluetooth device
+^#r::
+{
+	Run "C:\Windows\r.bat"
+	splash()
+	return
+}
+
+
 ; search on everything
 ^#e::
 {
