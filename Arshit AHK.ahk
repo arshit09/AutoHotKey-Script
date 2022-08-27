@@ -522,7 +522,7 @@ F9::
 	return
 }
 ; disconnect bluetooth device
-^#d::
+^#x::
 {
 	Run "C:\Windows\d.bat"
 	splash()
