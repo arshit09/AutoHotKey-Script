@@ -187,7 +187,7 @@ F9::
 
 ^!x::
 {
-	Run "C:\Program Files\Mozilla Firefox\firefox.exe"
+	Run "D:\downloads 14\chrome-win\chrome-win\chrome.exe"
 	splash()
 	return
 }
