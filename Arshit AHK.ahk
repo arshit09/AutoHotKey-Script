@@ -121,7 +121,7 @@ F9::
 
 ^!o::
 {
-	Run "C:\Users\Public\Desktop\OBS Studio.lnk"
+	Run "C:\Users\arshi\Desktop\OBS Studio.lnk"
 	;"C:\Program Files\obs-studio\bin\64bit\obs64.exe" /k " cd\ & cd "C:\Program Files\obs-studio\bin\64bit"
 	;"C:\Program Files\obs-studio\bin\64bit\obs64.exe" cd\ & cd "C:\Program Files\obs-studio\bin\64bit"
 	;Run cmd.exe /c '"C:\Program Files\obs-studio\bin\64bit\obs64.exe" cd\ & cd "C:\Program Files\obs-studio\bin\64bit"',,hide
@@ -187,7 +187,7 @@ F9::
 
 ^!x::
 {
-	Run "D:\downloads 14\chrome-win\chrome-win\chrome.exe"
+	Run "C:\Program Files\chrome-win\chrome.exe"
 	splash()
 	return
 }
@@ -449,6 +449,12 @@ F9::
 	return
 }
 
+^+p::
+{
+	Run "https://photos.google.com/"
+	splash()
+	return
+}
 ;^+r::
 ;{
 ;	Run "https://www.reddit.com/"
