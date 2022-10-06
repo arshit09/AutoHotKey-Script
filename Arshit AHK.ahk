@@ -1,4 +1,4 @@
-﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
@@ -72,14 +72,14 @@ F9::
 
 ^!d::
 {
-	Run "C:\Users\arshi\Desktop\Dota 2.url"
+	Run "C:\Users\%a_username%\Desktop\Dota 2.url"
 	splash()
 	return
 }
 
 ^!f::
 {
-	Run "C:\Users\arshi\AppData\Local\Figma\Figma.exe"
+	Run "C:\Users\%a_username%\AppData\Local\Figma\Figma.exe"
 	splash()
 	return
 }
@@ -121,7 +121,7 @@ F9::
 
 ^!o::
 {
-	Run "C:\Users\arshi\Desktop\OBS Studio.lnk"
+	Run "C:\Users\%a_username%\Desktop\OBS Studio.lnk"
 	;"C:\Program Files\obs-studio\bin\64bit\obs64.exe" /k " cd\ & cd "C:\Program Files\obs-studio\bin\64bit"
 	;"C:\Program Files\obs-studio\bin\64bit\obs64.exe" cd\ & cd "C:\Program Files\obs-studio\bin\64bit"
 	;Run cmd.exe /c '"C:\Program Files\obs-studio\bin\64bit\obs64.exe" cd\ & cd "C:\Program Files\obs-studio\bin\64bit"',,hide
@@ -138,14 +138,14 @@ F9::
 
 ^!q::
 {
-	Run "C:\Users\arshi\AppData\Local\Programs\Notion\Notion.exe"
+	Run "C:\Users\%a_username%\AppData\Local\Programs\Notion\Notion.exe"
 	splash()
 	return
 }
 
 ^!r::
 {
-	Run cmd.exe /c "C:\Users\arshi\AppData\Local\Discord\Update.exe --processStart Discord.exe",,hide
+	Run cmd.exe /c "C:\Users\%a_username%\AppData\Local\Discord\Update.exe --processStart Discord.exe",,hide
 	splash()
 	return
 }
@@ -159,7 +159,7 @@ F9::
 
 ^!t::
 {
-	Run "C:\Users\arshi\AppData\Roaming\Telegram Desktop\Telegram.exe"
+	Run "C:\Users\%a_username%\AppData\Roaming\Telegram Desktop\Telegram.exe"
 	splash()
 	return
 }
@@ -180,7 +180,7 @@ F9::
 
 ^!w::
 {
-	Run "C:\Users\arshi\Desktop\Wallpaper Engine.url"
+	Run "C:\Users\%a_username%\Desktop\Wallpaper Engine.url"
 	splash()
 	return
 }
@@ -194,14 +194,14 @@ F9::
 
 ^!y::
 {
-	Run "C:\Users\arshi\AppData\Local\vysor\Vysor.exe"
+	Run "C:\Users\%a_username%\AppData\Local\vysor\Vysor.exe"
 	splash()
 	return
 }
 
 ^!z::
 {
-	Run "C:\Users\arshi\AppData\Roaming\Zoom\bin\Zoom.exe"
+	Run "C:\Users\%a_username%\AppData\Roaming\Zoom\bin\Zoom.exe"
 	splash()
 	return
 }
@@ -253,7 +253,7 @@ F9::
 
 !a::
 {
-	Run "C:\Users\arshi\AppData"
+	Run "C:\Users\%a_username%\AppData"
 	splash()
 	return
 }
@@ -274,7 +274,7 @@ F9::
 
 !d::
 {
-	Run "C:\Users\arshi\Downloads"
+	Run "C:\Users\%a_username%\Downloads"
 	splash()
 	return
 }
@@ -309,7 +309,7 @@ F9::
 
 !q::
 {
-	Run "C:\Users\arshi\Desktop"
+	Run "C:\Users\%a_username%\Desktop"
 	splash()
 	return
 }
@@ -323,7 +323,7 @@ F9::
 
 !s::
 {
-	Run "C:\Users\arshi\Pictures\Screenshots"
+	Run "C:\Users\%a_username%\Pictures\Screenshots"
 	splash()
 	return
 }
@@ -337,14 +337,14 @@ F9::
 
 !u::
 {
-	Run "C:\Users\arshi\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
+	Run "C:\Users\%a_username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
 	splash()
 	return
 }
 
 !v::
 {
-	Run "C:\Users\arshi\Videos"
+	Run "C:\Users\%a_username%\Videos"
 	splash()
 	return
 }
