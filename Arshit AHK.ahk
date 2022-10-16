@@ -288,7 +288,7 @@ F9::
 
 !h::
 {
-	Run "C:\Windows\System32\drivers\etc"
+	Run "D:\Data\Git"
 	splash()
 	return
 }
@@ -324,13 +324,6 @@ F9::
 !s::
 {
 	Run "C:\Users\%a_username%\Pictures\Screenshots"
-	splash()
-	return
-}
-
-!t::
-{
-	Run "D:\Data\Git"
 	splash()
 	return
 }
